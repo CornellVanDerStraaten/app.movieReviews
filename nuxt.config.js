@@ -35,7 +35,13 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/axios'
   ],
+
+  axios: {
+    baseURL: 'http://api.movieReviews.test',
+    credentials: true,
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
